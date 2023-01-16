@@ -1,0 +1,23 @@
+<div class="navbar">
+    <div class="store">
+        <a><i class="fa fa-home" style="font-size: 40px">Digital Shopping</i></a>
+    </div>
+    <div class="logout">
+        <button class="btn btn-success pull-right" input name="submit" type="submit" id="submit" value="logout" (click)="logout()"><i class="fa fa-sign-in" style="font-size:24px">Logout</i></button>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="vertical-menu">
+        <a routerLink="/dashboard"><i class="fa fa-dashboard" style="font-size:35px"><strong style="font-weight:normal">Dash-Board</strong></i></a>
+        <a routerLink="/order"><i class="fa fa-shopping-cart" style="font-size:35px"><strong style="font-weight:normal">Orders</strong></i></a>
+        <a routerLink="/my-order"><i class="fa fa-shopping-cart" style="font-size:35px"><strong style="font-weight:normal">My Orders</strong></i></a>
+        <a routerLink="/location"><i class="fa fa-map-marker" style="font-size:35px"><strong style="font-weight:normal">Location</strong></i></a>
+        <a routerLink="/reporting"><i class="fa fa-folder-open" style="font-size:35px"><strong style="font-weight:normal">Reporting</strong></i></a>
+        <a routerLink="/admin-page"><i class="fa fa-user" style="font-size:35px"><strong style="font-weight:normal">Admin-Page</strong></i></a>
+
+        <!-- <div *ngif="user.role =='SuperAdmin'">
+
+        </div> -->
+    </div>
+</div>

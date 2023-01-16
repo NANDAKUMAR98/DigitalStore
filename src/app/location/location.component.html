@@ -1,0 +1,33 @@
+<app-nav-sidebar></app-nav-sidebar>
+<div class="content">
+
+    <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Location</th>
+              <th>Location Type</th>
+              <th>Address</th>
+              <th>CityTown</th>
+              <th>PostCode</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let loc of location">
+            <td>{{loc.id}}</td>
+            <td>{{loc.location}}</td>
+            <td>{{loc.locationtype}}</td>
+            <td>{{loc.Address}}</td>
+            <td>{{loc.citytown}}</td>
+            <td>{{loc.postcode}}</td>
+            <td>
+                <button type="submit" (click)="deleteLocation(loc.id)"class="btn btn-danger">Delete</button>
+            </td>
+            </tr>
+            
+          </tbody>
+        </table>
+        </div>
+      </div>

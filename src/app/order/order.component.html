@@ -1,0 +1,48 @@
+<app-nav-sidebar></app-nav-sidebar>
+<div class="content">
+    <div class="list">
+  
+          
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Product Image</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Type</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Description</th>
+                <th scope="col">Location</th>
+                <th scope="col">Price</th>
+                <!-- <th scope="col">Action</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of products">
+                <th scope="row">{{product.id}}</th>
+                <td class="w-25">
+                  <img src="{{product.imageUrl}}" class="w-50 p-3">
+                </td>
+                <td>{{product.productName}}</td>
+                <td>{{product.productType}}</td>
+                <td>{{product.brandName}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.location}}</td>
+                <td>{{product.price}}</td>
+                <!-- <td><button type="submit" class="btn btn-danger ">Delete</button></td> -->
+              </tr>
+             
+            </tbody>
+          </table>   
+          </div>
+        </div>
+      </div>
+           
+           
+            
+ 
+</div>
+</div>
