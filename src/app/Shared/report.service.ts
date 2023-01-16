@@ -20,7 +20,7 @@ export class ReportService {
           location
           productname
           email
-          requestype
+          requesttype
           description
         priority
         postcode

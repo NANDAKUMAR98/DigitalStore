@@ -17,8 +17,7 @@ export class LocationComponent implements OnInit {
   ngOnInit(): void {
     this.getAllLocations();
     this.locservice.getAllLocations().subscribe((result)=>{
-      this.location =result.data.getAllLocations;
-      console.log('Loc',result.data.getAllLocations)
+     
     });
   }
   getAllLocations(){

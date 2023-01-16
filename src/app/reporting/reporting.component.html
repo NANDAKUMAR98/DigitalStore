@@ -1,4 +1,39 @@
 <app-nav-sidebar></app-nav-sidebar>
 <div class="content">
     
+    <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Request Type</th>
+              <th>Priority</th>
+              <th>Description</th>
+              <th>Email</th>
+              <th>Location</th>
+              <th>PostCode</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let repo of report">
+            <td>{{repo.id}}</td>
+            <td>{{repo.productname}}</td>
+            <td>{{repo.requesttype}}</td>
+            <td>{{repo.priority}}</td>
+            <td>{{repo.description}}</td>
+            <td>{{repo.email}}</td>
+            <td>{{repo.location}}</td>
+            <td>{{repo.postcode}}</td>
+          
+            <td>
+                <button type="submit" (click)="deleteReport(repo.id)"class="btn btn-danger">Delete</button>
+            </td>
+            </tr>
+            
+          </tbody>
+        </table>
+        </div>
+    
 </div>

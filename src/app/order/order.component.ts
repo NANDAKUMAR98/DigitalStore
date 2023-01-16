@@ -18,7 +18,7 @@ product:Product=new Product();
   getAllProduct(){
     this.productService.getAllProduct().subscribe((result)=>{
       this.products=result.data.getAllProducts;
-      console.log('Prod', this.products=result.data.getAllProducts);
+     
     })
   }
 
