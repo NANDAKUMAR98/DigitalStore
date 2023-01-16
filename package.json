@@ -20,6 +20,7 @@
     "@angular/router": "^14.0.0",
     "@apollo/client": "^3.7.4",
     "@apollo/react-components": "^4.0.0",
+    "angular-cli-ghpages": "^1.0.5",
     "apollo": "^2.34.0",
     "apollo-angular": "^4.2.0",
     "apollo-modules": "^1.0.7",
