@@ -8,10 +8,12 @@ import { MyOrderComponent } from './my-order/my-order.component';
 import { OrderComponent } from './order/order.component';
 import { ReportingComponent } from './reporting/reporting.component';
 import { AuthGuard } from './Shared/auth.guard';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch: 'full'},
   {path:'login',component:LoginComponent},
+  {path:'signup',component:SignupComponent},
   {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
   {path:'order',component:OrderComponent,canActivate:[AuthGuard]},
   {path:'my-order',component:MyOrderComponent,canActivate:[AuthGuard]},

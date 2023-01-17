@@ -1,4 +1,4 @@
-export class USERDTO {
+export class UserDto {
 
     id!:number;
     email!:string;

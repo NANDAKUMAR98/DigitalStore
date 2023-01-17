@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApolloModule } from 'apollo-angular';
 import { GraphqlModule } from './graphql/graphql.module';
 import { MyOrderComponent } from './my-order/my-order.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MyOrderComponent } from './my-order/my-order.component';
     NavSidebarComponent,
     PipesComponent,
     ReportingComponent,
-    MyOrderComponent
+    MyOrderComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
